@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.5.1",
     "@react-google-maps/api": "^2.19.2",
+    "antd": "^5.21.3",
     "axios": "^1.6.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "ymaps": "^0.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

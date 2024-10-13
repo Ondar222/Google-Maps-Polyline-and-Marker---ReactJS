@@ -44,28 +44,17 @@ const GoogleMapPolyline = () => {
       <div
         style={{
           display: "flex",
-          justifyContent: "space-between",
+          justifyContent: "center", // Изменяем выравнивание на центр
           width: 1200,
         }}
       >
-        <div style={{ width: "60%" }}>
+        <div style={{ width: "50%" }}>
           <GoogleMap
             onClick={addPointToPath}
             mapContainerStyle={{ width: "100%", height: "400px" }}
-            center={{ lat: 40.4093, lng: 49.8671 }}
-            zoom={10}
+            center={{ lat: 51.7147, lng: 94.4534 }} // Координаты Кызыла
+            zoom={11}
           >
-            {/* =====Polyline===== */}
-            {/* <Polyline
-              path={path}
-              options={{
-                strokeColor: "#FF0000",
-                strokeOpacity: 1,
-                strokeWeight: 2,
-              }}
-            /> */}
-
-            {/* =====Marker===== */}
             {path.map((item, i) => (
               <Marker key={i} position={item} onClick={() => removeItem(i)} />
             ))}
